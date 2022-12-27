@@ -1,0 +1,21 @@
+{
+  "name": "ts-pro7",
+  "version": "0.0.1",
+  "description": "A Typed Library to read and write ProPresenter 7 Files",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-types": "protoc --plugin=./node_modules/.bin/protoc-gen-ts_proto --ts_proto_out=./generated/ts/ ./proto/*.proto -I ./proto/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "ts-proto": "^1.136.1",
+    "ts-protoc-gen": "^0.15.0"
+  }
+}
